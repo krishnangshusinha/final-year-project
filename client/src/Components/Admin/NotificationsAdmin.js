@@ -18,7 +18,7 @@ const NotificationAdmin = () => {
     
             try {
                 
-                const {data} = await axios.get(`http://localhost:3001/message/${admin}`);
+                const {data} = await axios.get(`https://final-year-project-9p1g.onrender.com/message/${admin}`);
                 
                 if( data?.success ){
                     setNotifications(data?.element);
@@ -40,7 +40,7 @@ const NotificationAdmin = () => {
     
     const markasread = async (id , msg , from) => {
         try {
-            const {data} = await axios.put(`http://localhost:3001/message/${id}`)
+            const {data} = await axios.put(`https://final-year-project-9p1g.onrender.com/message/${id}`)
             
             if( data?.success ){
                 console.log(data?.message);

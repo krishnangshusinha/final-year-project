@@ -19,7 +19,7 @@ const Track = () => {
     
     const submit = async () => {
         try {
-            const {data} = await axios.post("http://localhost:3001/feedback", {name , cid , type , feedback});
+            const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/feedback", {name , cid , type , feedback});
             
             if( data?.success ){
                 console.log(data.feed);
@@ -40,7 +40,7 @@ const Track = () => {
                 alert("Enter Complaint Number to check status");
             }
             else{
-                const {data} = await axios.get(`http://localhost:3001/track/${complaintID}`);
+                const {data} = await axios.get(`https://final-year-project-9p1g.onrender.com/track/${complaintID}`);
                 
                 if(data?.success){
                     console.log(data?.unqiue);

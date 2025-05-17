@@ -13,7 +13,7 @@ const Main = () => {
 
     const submit = async () => {
         try {
-            const {data} = await axios.post("http://localhost:3001/feedback", {name , cid , type , feedback});
+            const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/feedback", {name , cid , type , feedback});
             
             if( data?.success ){
                 console.log(data.feed);

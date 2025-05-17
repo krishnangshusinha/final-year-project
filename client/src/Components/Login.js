@@ -18,7 +18,7 @@ const Login = () => {
     // logging in the Admin
     const submit = async () => {
         try{
-            const {data} = await axios.post("http://localhost:3001/admin", {username,password,department});      // gets the response sent in this URL by the server
+            const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/admin", {username,password,department});      // gets the response sent in this URL by the server
 
             if( data?.success ){
                 console.log("Successfull");

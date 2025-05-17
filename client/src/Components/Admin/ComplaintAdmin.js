@@ -38,7 +38,7 @@ const ComplaintAdmin = () => {
         const fetchUniqueIDs = async (admin) => {
             
             try{
-                const {data} = await axios.get(`http://localhost:3001/admin/all/${admin}`);
+                const {data} = await axios.get(`https://final-year-project-9p1g.onrender.com/admin/all/${admin}`);
                 
                 if(data?.success){
                     setUnqiueID(data?.complaints);
@@ -70,7 +70,7 @@ const ComplaintAdmin = () => {
     const handleStatus = async (id , model) => {
         try {
             
-            const {data} = await axios.put(`http://localhost:3001/admin/${model}/${id}`)
+            const {data} = await axios.put(`https://final-year-project-9p1g.onrender.com/admin/${model}/${id}`)
 
             if( data?.success ){
                 window.location.reload();

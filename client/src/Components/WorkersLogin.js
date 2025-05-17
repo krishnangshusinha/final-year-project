@@ -18,7 +18,7 @@ const WorkersLogin = () => {
     // logging in the Technician
     const submit = async () => {
         try{
-            const {data} = await axios.post("http://localhost:3001/workers", {phone,password});      // gets the response sent in this URL by the server
+            const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/workers", {phone,password});      // gets the response sent in this URL by the server
 
             if( data?.success ){
                 setUsername(data?.username)

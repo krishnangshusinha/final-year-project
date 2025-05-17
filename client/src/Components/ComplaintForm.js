@@ -51,7 +51,7 @@ const ComplaintForm = () => {
                 
                 if( install_or_repair === "I" ){
                     // add to install schema
-                    const {data} = await axios.post("http://localhost:3001/electricity/install", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/electricity/install", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);
@@ -61,7 +61,7 @@ const ComplaintForm = () => {
                 }
                 else if( install_or_repair === "R" ){
                     // add to repair schema
-                    const {data} = await axios.post("http://localhost:3001/electricity/repair", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/electricity/repair", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);
@@ -75,7 +75,7 @@ const ComplaintForm = () => {
                 
                 if( install_or_repair === "I" ){
                     // add to install schema
-                    const {data} = await axios.post("http://localhost:3001/water/install", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/water/install", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);
@@ -85,7 +85,7 @@ const ComplaintForm = () => {
                 }
                 else if( install_or_repair === "R" ){
                     // add to repair schema
-                    const {data} = await axios.post("http://localhost:3001/water/repair", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/water/repair", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);
@@ -98,7 +98,7 @@ const ComplaintForm = () => {
             else if(category === "road"){
                 if( install_or_repair === "I" ){
                     // add to install schema
-                    const {data} = await axios.post("http://localhost:3001/road/install", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/road/install", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);
@@ -108,7 +108,7 @@ const ComplaintForm = () => {
                 }
                 else if( install_or_repair === "R" ){
                     // add to repair schema
-                    const {data} = await axios.post("http://localhost:3001/road/repair", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/road/repair", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);
@@ -120,7 +120,7 @@ const ComplaintForm = () => {
             else if(category === "drainage"){
                 if( install_or_repair === "I" ){
                     // add to install schema
-                    const {data} = await axios.post("http://localhost:3001/drainage/install", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/drainage/install", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);
@@ -130,7 +130,7 @@ const ComplaintForm = () => {
                 }
                 else if( install_or_repair === "R" ){
                     // add to repair schema
-                    const {data} = await axios.post("http://localhost:3001/drainage/repair", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/drainage/repair", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);
@@ -142,7 +142,7 @@ const ComplaintForm = () => {
             else if(category === "garbage"){
                 if( install_or_repair === "I" ){
                     // add to install schema
-                    const {data} = await axios.post("http://localhost:3001/garbage/install", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/garbage/install", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);
@@ -152,7 +152,7 @@ const ComplaintForm = () => {
                 }
                 else if( install_or_repair === "R" ){
                     // add to repair schema
-                    const {data} = await axios.post("http://localhost:3001/garbage/repair", {user_id , description , name , mobileNumber, area, pincode, district});
+                    const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/garbage/repair", {user_id , description , name , mobileNumber, area, pincode, district});
 
                     if( data?.success ){
                         console.log(data.unique._id);

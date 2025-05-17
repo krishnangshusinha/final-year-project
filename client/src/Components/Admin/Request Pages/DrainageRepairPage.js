@@ -37,7 +37,7 @@ const DrainageRepairPage = () => {
         const fetchUniqueIDs = async () => {
             
             try{
-                const {data} = await axios.get("http://localhost:3001/admin/drainage/repairs");
+                const {data} = await axios.get("https://final-year-project-9p1g.onrender.com/admin/drainage/repairs");
                 
                 if(data?.success){
                     setComplaints(data?.complaints);
@@ -59,7 +59,7 @@ const DrainageRepairPage = () => {
     const deleteComplaint = async (id) => {
                 
         try{
-            const {data} = await axios.delete(`http://localhost:3001/admin/delete/drainage/repairs/${id}`)
+            const {data} = await axios.delete(`https://final-year-project-9p1g.onrender.com/admin/delete/drainage/repairs/${id}`)
 
             if( data?.success ){
                 window.location.reload();
@@ -74,7 +74,7 @@ const DrainageRepairPage = () => {
     // handles status update for a complaint
     const handleStatus = async (id , status) => {
         try {
-            const {data} = await axios.put(`http://localhost:3001/admin/drainage/repair/${id}/${status}`)
+            const {data} = await axios.put(`https://final-year-project-9p1g.onrender.com/admin/drainage/repair/${id}/${status}`)
 
             if( data?.success ){
                 window.location.reload();
@@ -98,7 +98,7 @@ const DrainageRepairPage = () => {
 
     const assignComplaint = async (id, unique, phone)=> {
         try{
-            const {data} = await axios.put(`http://localhost:3001/workers/assign/${phone}/${unique}`);
+            const {data} = await axios.put(`https://final-year-project-9p1g.onrender.com/workers/assign/${phone}/${unique}`);
 
             if( data?.success ){
                 console.log(data?.element)

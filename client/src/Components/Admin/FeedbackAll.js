@@ -16,7 +16,7 @@ const FeedbackAll = () => {
         
                 try {
                     
-                    const {data} = await axios.get(`http://localhost:3001/feedback/${department}`);
+                    const {data} = await axios.get(`https://final-year-project-9p1g.onrender.com/feedback/${department}`);
                     
                     if( data?.success ){
                         setFeedbacks(data?.element);

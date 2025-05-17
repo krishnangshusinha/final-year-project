@@ -15,7 +15,7 @@ const Modal = ({id, time, desc, uid, mobile, area, pincode, district, status}) =
     const deleteComplaint = async (id) => {
             
             try{
-                const {data} = await axios.delete(`http://localhost:3001/admin/delete/electricity/installs/${id}`)
+                const {data} = await axios.delete(`https://final-year-project-9p1g.onrender.com/admin/delete/electricity/installs/${id}`)
     
                 if( data?.success ){
                     window.location.reload();

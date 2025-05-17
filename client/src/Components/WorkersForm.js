@@ -25,7 +25,7 @@ const WorkersForm = () => {
         
         const fetchComplaintDetails = async (unique) => {
             try {
-                const {data} = await axios.get(`http://localhost:3001/admin/${unique}`);
+                const {data} = await axios.get(`https://final-year-project-9p1g.onrender.com/admin/${unique}`);
                 
                 if( data?.success ){
                     setType(data?.type);
@@ -88,7 +88,7 @@ const WorkersForm = () => {
                 to = "garbage"
             }
 
-            const {data} = await axios.post("http://localhost:3001/message", {msg , to , from , markasread, dept });
+            const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/message", {msg , to , from , markasread, dept });
 
             if( data?.success ){
                 alert("Forwaded to the Admin")
@@ -118,7 +118,7 @@ const WorkersForm = () => {
             }
 
             const msg = "Resolved Complaint " + unique;
-            const {data} = await axios.post("http://localhost:3001/message", {msg , to , from , markasread, dept });
+            const {data} = await axios.post("https://final-year-project-9p1g.onrender.com/message", {msg , to , from , markasread, dept });
 
             if( data?.success ){
                 setUnique("");

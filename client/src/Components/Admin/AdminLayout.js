@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logo from "../../images/logo.png";
 import account2 from "../../images/account2.png";
 import { useAuth } from "../../context/useAuth";
@@ -55,7 +55,7 @@ const AdminLayout = () => {
                                         <p className="text-white font-bold sm:text-2xl">Admin of {auth.department} Department</p>
                                     </div>
                                     <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
-                                        <img class="w-14 h-14 rounded-full text-white" src={account2} alt="user photo"/>
+                                        <img class="w-14 h-14 rounded-full text-white" src={account2} alt="user"/>
                                     </button>
                                 </div>
                                 <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">

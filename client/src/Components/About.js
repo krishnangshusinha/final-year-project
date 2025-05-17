@@ -1,6 +1,4 @@
 import React from "react";
-import municipality from "../images/mun.jpg"
-import logo from "../images/logo.png";
 import logo2 from "../images/logo.png"
 import { Link } from "react-router-dom";
 

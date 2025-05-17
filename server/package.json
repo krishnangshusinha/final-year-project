@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "build" : "npm i"
+    "build": "npm i"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,6 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "mongoose": "^8.8.2",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.10"
   }
 }
